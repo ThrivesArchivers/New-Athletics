@@ -1,203 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>New Athletics Treasury Office</title>
+# 🏃 New Athletics Treasury Office 💰
 
-<style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family: Arial, sans-serif;
-    }
+A simple and beautiful Athletics Treasury Management webpage built using:
 
-    body{
-        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-        color:white;
-        padding:30px;
-    }
+- HTML
+- CSS
+- JavaScript
 
-    .container{
-        max-width:900px;
-        margin:auto;
-        background: rgba(255,255,255,0.08);
-        padding:30px;
-        border-radius:20px;
-        box-shadow:0 0 20px rgba(0,0,0,0.5);
-    }
+This project displays:
+- Money received from members
+- Donations
+- Current balance
+- Expenses
+- Remaining amount needed
 
-    h1{
-        text-align:center;
-        margin-bottom:20px;
-        color:#00ffcc;
-        font-size:40px;
-    }
+---
 
-    h2{
-        margin-top:25px;
-        color:#ffd700;
-        border-bottom:2px solid #fff;
-        padding-bottom:8px;
-    }
+# 📥 Money Received
 
-    .member-list{
-        margin-top:15px;
-    }
+| Member | Amount |
+|--------|--------|
+| Mennah | K37 |
+| Paul (Captain) | K50 |
+| The General | K50 |
+| Nicolas (Vice Captain) | K50 |
+| Fred | K50 |
+| Jeff | K50 |
 
-    .member{
-        display:flex;
-        justify-content:space-between;
-        background:rgba(255,255,255,0.1);
-        padding:12px;
-        margin-bottom:10px;
-        border-radius:10px;
-    }
+### 💵 Current Balance
+K287
 
-    .summary{
-        margin-top:20px;
-        padding:20px;
-        background:rgba(0,0,0,0.3);
-        border-radius:15px;
-    }
+---
 
-    .summary p{
-        margin:10px 0;
-        font-size:18px;
-    }
+# 🎁 Donation
 
-    .highlight{
-        color:#00ff99;
-        font-weight:bold;
-    }
+System Donation: **K400**
 
-    .danger{
-        color:#ff4d4d;
-        font-weight:bold;
-    }
+⚠️ Donation from Coach: **Not Yet Received**
 
-    .note{
-        margin-top:25px;
-        padding:15px;
-        background:#ff9800;
-        color:black;
-        border-radius:10px;
-        font-weight:bold;
-        text-align:center;
-    }
+### 🏦 Total Athletics Money
+K687
 
-    button{
-        margin-top:20px;
-        width:100%;
-        padding:15px;
-        border:none;
-        border-radius:10px;
-        background:#00cc99;
-        color:white;
-        font-size:18px;
-        cursor:pointer;
-        transition:0.3s;
-    }
+---
 
-    button:hover{
-        background:#009977;
-    }
-</style>
-</head>
+# 📋 Expenses
 
-<body>
+| Expense | Amount |
+|---------|--------|
+| Processing of Jessy | K1300 |
+| First Aid / Money Keeping | K200 |
 
-<div class="container">
+### 📌 Total Needed
+K1500
 
-    <h1>🏃 New Athletics Treasury Office 💰</h1>
+### 📉 Remaining Needed
+K813
 
-    <h2>Money Received</h2>
+---
 
-    <div class="member-list" id="members"></div>
+# 📢 Important Update
 
-    <div class="summary">
-        <p>💵 Current Balance in Account:
-            <span class="highlight">K287</span>
-        </p>
+Starting next season, every member should contribute **K50**.
 
-        <p>🎁 Donation From System:
-            <span class="highlight">K400</span>
-        </p>
+---
 
-        <p>⚠️ Donation from Coach:
-            <span class="danger">Not Yet Received</span>
-        </p>
+# 🚀 How To Run
 
-        <p>🏦 Total Athletics Money:
-            <span class="highlight">K687</span>
-        </p>
-    </div>
+## Step 1
+Copy the code into a file called:
 
-    <h2>Expenses</h2>
+```bash
+index.html
+```
 
-    <div class="summary">
-        <p>📋 Processing of Jessy:
-            <span class="danger">K1300</span>
-        </p>
+## Step 2
+Save the file.
 
-        <p>🩹 First Aid / Money Keeping:
-            <span class="danger">K200</span>
-        </p>
+## Step 3
+Open the file in your browser:
+- Chrome
+- Edge
+- Firefox
+- Opera
 
-        <p>📌 Total Needed:
-            <span class="highlight">K1500</span>
-        </p>
+---
 
-        <p>📉 Remaining Needed:
-            <span class="danger" id="remaining"></span>
-        </p>
-    </div>
+# 🎨 Features
 
-    <div class="note">
-        📢 Starting next season, every member should contribute K50!
-    </div>
+✅ Beautiful modern design  
+✅ Responsive layout  
+✅ JavaScript calculations  
+✅ Treasury summary  
+✅ Member contribution list  
+✅ Interactive button alert  
 
-    <button onclick="showMessage()">
-        View Treasury Message
-    </button>
+---
 
-</div>
+# 🛠 Technologies Used
 
-<script>
+```html
+HTML5
+CSS3
+JavaScript
+```
 
-const members = [
-    {name:"Mennah", amount:37},
-    {name:"Paul (Captain)", amount:50},
-    {name:"The General", amount:50},
-    {name:"Nicolas (Vice Captain)", amount:50},
-    {name:"Fred", amount:50},
-    {name:"Jeff", amount:50}
-];
+---
 
-const memberContainer = document.getElementById("members");
+# 📷 Preview
 
-members.forEach(member => {
-    memberContainer.innerHTML += `
-        <div class="member">
-            <span>${member.name}</span>
-            <span>K${member.amount}</span>
-        </div>
-    `;
-});
+The webpage contains:
+- Treasury dashboard
+- Member payment cards
+- Expense summary
+- Donation information
+- Alert button
 
-const totalNeeded = 1500;
-const currentMoney = 687;
+---
 
-const remaining = totalNeeded - currentMoney;
+# ❤️ Athletics Treasury System
 
-document.getElementById("remaining").innerHTML = "K" + remaining;
-
-function showMessage(){
-    alert("🏃 Athletics Treasury Update:Current Available Money: K687 Total Needed: K1500 Remaining Balance Needed: K813 Thank you for supporting Athletics!");
-}
-
-</script>
-
-</body>
-</html>
+Developed for managing athletics contributions and expenses efficiently.
